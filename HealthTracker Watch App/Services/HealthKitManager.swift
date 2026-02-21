@@ -35,7 +35,7 @@ class HealthKitManager {
     }
     
     //Query
-    func setchLatestHeartRate() async throws -> Double? {
+    func fetchLatestHeartRate() async throws -> Double? {
         return try await withCheckedThrowingContinuation {confirmation in
             //Order for the data
             let sortDescriptor = NSSortDescriptor(
